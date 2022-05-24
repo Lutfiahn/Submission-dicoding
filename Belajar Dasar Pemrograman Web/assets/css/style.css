@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css?family=Trirong:400,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0%;
+  font-family: "Trirong", serif;
+  background-color: #fff8dc;
+}
+
+header {
+  display: inline;
+}
+
+nav {
+  top: 0;
+  padding: 5px;
+  position: sticky;
+  background-color: #663300;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/*link*/
+
+a:hover {
+  color: #ff9966;
+}
+
+a:active {
+  color: #ffcc99;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #663300;
+  text-align: center;
+  font-weight: bold;
+}
+
+.jumbotron {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 80px;
+  background-image: url("../../assets/img/bg.jpeg");
+  background-size: cover;
+  color: black;
+  text-align: center;
+}
+
+#content {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  transition: transfrom 0.2s;
+  border-radius: 5px;
+}
+
+.featured-image:hover {
+  transform: scale(1.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profile section {
+  text-align: left;
+}
+
+.profile section img {
+  width: 50px;
+}
+
+.profile section img:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px) {
+  main #content,
+  main aside {
+    width: 100%;
+    padding: 0;
+  }
+}
